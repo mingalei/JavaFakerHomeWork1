@@ -12,7 +12,7 @@ public class PracticeWithFakerTests extends BeforeUrl {
 
 
     @Test
-    void formPageObject() {
+    public void formPageObject() {
         registrationPage.openPage()
                 .setFirstName(userFirstName)
                 .setLastname(userLastName)
@@ -28,7 +28,7 @@ public class PracticeWithFakerTests extends BeforeUrl {
                 .selectCity(cityValue)
                 .clickSubmit();
 
-        this.registrationPage.checkModalTable()
+        registrationPage.checkModalTable()
                 .resultPage("Student Name", userFirstName + " " + userLastName)
                 .resultPage("Student Email", userEmail)
                 .resultPage("Gender", userGender)
