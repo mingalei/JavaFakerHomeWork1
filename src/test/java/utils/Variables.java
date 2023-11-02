@@ -1,7 +1,7 @@
 package utils;
 
 public class Variables {
-    public static String
+    public String
             userFirstName = RandomGeneration.getFirstName(),
             userLastName = RandomGeneration.getLastName(),
             mobileNumber = RandomGeneration.userMobileNumber(),
